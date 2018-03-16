@@ -1,0 +1,26 @@
+{
+  "name": "live-mining-stat-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "babel -w src/ -d dist/",
+    "build": "babel src/ -d dist/",
+    "dev": "node dist/main.js",
+    "prod": "NODE_ENV=prod node dist/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "child-process-promise": "^2.2.1",
+    "mongoose": "^4.13.7",
+    "node-telegram-bot-api": "^0.29.0",
+    "request-promise-native": "^1.0.5",
+    "string-template": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
